@@ -1,0 +1,201 @@
+/* 폰트 지정 */
+* {
+    font-family: "Gowun Dodum", sans-serif;
+}
+::placeholder {
+    color: black;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 배경사이즈 */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+img {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    /* overflow: hidden; */
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    opacity: 80%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* login-form 위치 */
+#login-form {
+    z-index: 2;
+    width: 500px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-align: center;
+}
+#login-form > input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    /* border-radius: 10px; */
+    border-bottom: 1px solid black;
+    background: transparent;
+    /* opacity: 50%; */
+}
+#login-form > input:focus {
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: larger;
+
+    /* background: whitesmoke; */
+}
+/* #login-form > input:hover {
+    border-bottom: 3px dotted orange;
+} */
+
+button {
+    /* width: 300px; */
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    /* opacity: 50%; */
+}
+
+button:hover {
+    font-weight: bold;
+    font-size: larger;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid oragne;
+}
+
+/* greeting 위치 */
+#greeting {
+    z-index: 2;
+    width: 500px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 0 1px black;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* clock 위치 */
+#clock {
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    color: white;
+    text-shadow: 1px 0 1px black;
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 100px;
+}
+
+#todo-form {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+#todo-form > input {
+    width: 300px;
+    font-size: 15px;
+    border: 1px dotted black;
+    outline: none;
+    /* opacity: 90%; */
+    background: transparent;
+}
+
+#todo-form > input:focus {
+    width: 300px;
+    border: none;
+    outline: none;
+    font-size: larger;
+}
+#todo-form > input:hover {
+    background: lightgray;
+}
+
+#todo-list {
+    display: grid;
+    width: 400px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 4;
+    text-align: center;
+    font-size: 18px;
+    grid-template-columns: 200px 200px;
+}
+
+#todo-list button {
+    background: none;
+}
+#todo-list button:hover {
+    font-weight: bold;
+    text-shadow: 1px 0 1px black;
+}
+#quote {
+    position: absolute;
+    z-index: 2;
+    padding-bottom: 50px;
+    top: 90%;
+    left: 50%;
+    padding-top: 20px;
+    transform: translate(-50%, -50%);
+    color: black;
+    width: 900px;
+    font-weight: bold;
+    text-shadow: 1px 0 1px white;
+}
+
+#weather {
+    z-index: 2;
+    left: 90%;
+    top: 10px;
+    transform: translate(-50%, 10%);
+    position: absolute;
+    color: gray;
+    width: 200px;
+    margin-top: 10px;
+}
